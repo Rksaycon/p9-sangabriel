@@ -1,0 +1,153 @@
+/* Global Styling */
+body {
+    background: linear-gradient(135deg, #e0f7fa, #fff8e1);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align at the top to avoid extra space below */
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    overflow: hidden; /* Prevent scrolling */
+  }
+  
+  /* Home Section Styling */
+  .home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: rgb(223, 228, 255);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 70px; /* Added margin-top to avoid overlap with navbar */
+    min-height: 100vh; /* Ensure the home section stretches to fill the screen */
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Left Side Content Styling */
+  .info {
+    flex: 1;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #333;
+    margin: 0 0 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    color: #555;
+    margin: 0 0 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Button Styling */
+  .btn {
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .primary-btn {
+    background-color: #f0a500;
+    color: #fff;
+  }
+  
+  .primary-btn:hover {
+    background-color: #cf8e05;
+    transform: translateY(-3px);
+  }
+  
+  .secondary-btn {
+    background-color: transparent;
+    border-color: #f0a500;
+    color: #f0a500;
+  }
+  
+  .secondary-btn:hover {
+    background-color: #f0a500;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Right Side Image Styling */
+  .hero-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .profile-pic {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .profile-pic:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      padding: 20px;
+      min-height: auto; /* Allow content to grow dynamically */
+    }
+  
+    .hero {
+      padding-right: 0;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
