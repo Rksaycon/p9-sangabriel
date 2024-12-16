@@ -1,5 +1,5 @@
 import React from 'react';
-import './about.css'; // Import the About page CSS
+import './About.css'; // Import the About page CSS
 
 // Replace with your actual image paths
 import Photo1 from './assets/picme.jpg';
