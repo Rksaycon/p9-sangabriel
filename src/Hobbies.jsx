@@ -1,5 +1,5 @@
 import React from 'react';
-import './hobbies.css'; // Make sure to create a separate CSS file for hobbies
+import './Hobbies.css'; // Make sure to create a separate CSS file for hobbies
 
 const Hobbies = () => {
   return (
