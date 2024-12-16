@@ -5,9 +5,7 @@ import DogProfile from "./assets/picme.jpg"; // Import the image
 function Home() {
   return (
     <>
-      Background (before container)
-      <div className="home-background"></div>
-
+      
       <div className="home">
         {/* Left side content (scrollable) */}
         <div className="info">
